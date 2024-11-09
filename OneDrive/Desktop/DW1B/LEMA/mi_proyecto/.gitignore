@@ -16,3 +16,22 @@ webfonts/
 
 # Ignorar archivos de configuración o específicos de entornos locales si es necesario
 .env
+
+/Application Data/
+/Cookies/
+/Documents/
+/Local Settings/
+/My Documents/
+/AppData/
+/Contacts/
+/Desktop/
+/Downloads/
+/Favorites/
+/IntelGraphicsProfiles/
+/Links/
+/Music/
+/Pictures/
+/Saved Games/
+/Searches/
+/Videos/
+
