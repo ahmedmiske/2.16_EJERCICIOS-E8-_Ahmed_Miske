@@ -1,39 +1,23 @@
-# Ignorar la carpeta de dependencias de Node.js
-node_modules/
-
-# Ignorar configuración de VS Code
-.vscode/
-
-# Ignorar archivo de bloqueo de dependencias
-package-lock.json
-
-# Ignorar fuentes y otros recursos externos si no necesitas rastrearlos
-webfonts/
-
-# Ignorar archivos específicos del sistema
-.DS_Store
-Thumbs.db
-
-# Ignorar archivos del sistema de Windows
-/Application Data/
-/Cookies/
-/Documents/
-/Local Settings/
-/My Documents/
-/AppData/
-/Contacts/
-/Desktop/
-/Downloads/
-/Favorites/
-/IntelGraphicsProfiles/
-/Links/
-/Music/
-/Pictures/
-/Saved Games/
-/Searches/
-/Videos/
-
-# Ignorar archivos y extensiones de documentos innecesarios
+# Ignorar archivos y carpetas del sistema
+Application Data/
+Cookies/
+Documents/
+Local Settings/
+My Documents/
+3D Objects/
+AppData/
+Contacts/
+Desktop/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+Links/
+Local Sites/
+Music/
+Pictures/
+Saved Games/
+Searches/
+Videos/
 *.lnk
 *.tmp
 *.pdf
@@ -44,3 +28,6 @@ Thumbs.db
 *.jpeg
 *.png
 *.gif
+.vscode/
+node_modules/
+NTUSER.DAT*
