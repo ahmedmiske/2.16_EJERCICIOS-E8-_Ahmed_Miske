@@ -1,4 +1,25 @@
-# Ignorar archivos y carpetas del sistema
+# Ignorar dependencias de Node.js
+node_modules/
+
+# Ignorar configuración de VS Code
+.vscode/
+
+# Ignorar archivos de bloqueo de dependencias
+package-lock.json
+
+# Ignorar otras carpetas relacionadas
+webfonts/
+Images/
+
+# Ignorar archivos temporales y específicos de sistema
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Ignorar archivos de configuraciones específicas o de entorno
+.env
+
+# Ignorar archivos relacionados con el sistema operativo
 Application Data/
 Cookies/
 Documents/
@@ -19,15 +40,11 @@ Saved Games/
 Searches/
 Videos/
 *.lnk
-*.tmp
+*.p12
 *.pdf
 *.docx
-*.p12
 *.exe
 *.jpg
 *.jpeg
 *.png
 *.gif
-.vscode/
-node_modules/
-NTUSER.DAT*
