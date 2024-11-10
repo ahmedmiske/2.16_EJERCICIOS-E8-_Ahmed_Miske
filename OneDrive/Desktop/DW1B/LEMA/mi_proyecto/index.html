@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página principal del portal de migrantes en Euskadi, ofreciendo recursos y servicios para migrantes.">
+
+    <title>Esucadi migrantes</title>
+    
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/normelize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome from CDN to avoid CORS issues -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body onload="toggleContent('page-landing')">
+
+  <!-- START Header -->
+  <header id="header" class="header">
+    <nav class="container  navbar">
+      <a href="#" class="logo"><img src="Images/logo.png" alt="Logo"></a>
+      <div class="search-form">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Buscar...">
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+      <ul class="main-nav">
+        <li><a href="#landing" onclick="toggleContent('page-landing')"><i class="fa fa-home"> INICIO</i></a></li>
+     
+        <li><a href="#contacto" onclick="toggleContent('page-contacto')">CONTACTO</a></li>
+        <li><a href="#servicios" onclick="toggleContent('page-servicios')">SERVICIOS</a></li>
+        <li><a href="#ayuntamiento" onclick="toggleContent('page-ayuntamiento')">AYUNTAMIENTO</a></li>
+        <li><a href="#asociaciones" onclick="toggleContent('page-asociaciones')">ASOCIASIONES</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <!-- END Header -->
+
+  <!-- Main Content -->
+  <main>
+    <!-- START Landing Page -->
+    <div class="page" id="page-landing">
+      <div class="container">
+        <div class="text">
+          <h1>¡Bienvenido al Portal de Migrantes en Euskadi!</h1>
+          <p>
+            Este sitio es un punto de encuentro inclusivo para migrantes,
+             apoyado por el Gobierno Vasco, donde fomentamos la ayuda mutua
+              y la colaboración.
+          </p>
+          <button onclick="toggleContent('page-servicios')">Explorar los servicios</button>
+        </div>
+        <div class="image">
+          <img src="Images/immigration.png" alt="Landing Image">
+        </div>
+      </div>
+      <a href="#articles" class="go-down" id="go-down">
+        <i class="fas fa-angle-double-down fa-2x"></i>
+      </a>
+    </div>
+    <!-- END Landing Page -->
+
+    <!-- START ayuntamiento Page -->
+    <div class="page" id="page-ayuntamiento" style="display:none;">
+      <div class="titlePage">
+        <button onclick="toggleContent('page-landing')" class="btn btn-secondary d-flex align-items-center">
+          <i class="fas fa-arrow-left me-2"></i> 
+          Regresar
+        </button>
+        <h1>AYUNTAMIENTO DE EUSKADI</h1>
+      </div>
+      <div class="container">
+        <section>
+          <div class="definicion">
+            <p class="text-center mb-4">
+              Encuentra aquí información sobre los ayuntamientos de diferentes municipios del País Vasco. Cada tarjeta contiene datos de contacto, número de teléfono y enlace a la página oficial de cada municipio.
+            </p>
+          </div>
+          <!--  Biscay -->
+          <div class="row col-12">
+            <!-- Tarjeta para la ciudad de Bilbao -->
+            <div class="card col-md-6 mb-4">
+              <div class="shadow-sm">
+                <img src="Images/ayutamient-bilbao.jpg" class="card-img-top" alt="Bilbao">
+                <div class="card-body">
+                  <h5 class="card-title">Bilbao</h5>
+                  <p class="card-text">Bilbao es la capital de Vizcaya, conocida por su arquitectura moderna y el Museo Guggenheim.</p>
+                  <p><strong>Teléfono:</strong> +34 944 204 200</p>
+                  <a href="https://www.bilbao.eus" target="_blank" class="btn btn-primary">Visitar sitio</a>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Tarjeta de municipios de Vizcaya relacionados con Bilbao -->
+            <div class="card col-md-6 mb-4">
+              <div class="shadow-sm">
+                <!-- <img src="Images/provincia-vizcaya.png" class="card-img-top" alt="vizcaya"> -->
+                <div class="card-body ">
+                  <h5 class="card-title ">Municipios en Vizcaya</h5>
+                  <div class="list-unstyled">
+                    <!-- line item -->
+                    <div class="line">
+                      <div  class="municipio-item">
+                        <strong>Barakaldo</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Barakaldo<br>
+                          <a href="https://www.barakaldo.eus" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                      <div  class="municipio-item">
+                        <strong>Santurtzi</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Santurtzi<br>
+                          <a href="https://www.santurtzi.eus" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Line item -->
+                    <div class="line">  
+                      <div  class="municipio-item">
+                        <strong>Basauri</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Basauri<br>
+                          <a href="https://www.basauri.net" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                      <div  class="municipio-item">
+                        <strong>Galdakao</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Galdakao<br>
+                          <a href="https://www.galdakao.eus" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                    </div>
+                      <!-- line item -->
+                      <div class="line">
+                        <div  class="municipio-item">
+                          <strong>Sestao</strong>
+                          <div class="municipio-details" >
+                            Dirección: Calle de Ejemplo, Sestao<br>
+                            <a href="https://www.sestao.eus" target="_blank">Visitar sitio</a>
+                          </div>
+                        </div>
+                        <div  class="municipio-item">
+                          <strong>Erandio</strong>
+                          <div class="municipio-details" >
+                            <p>Dirección: Calle de Ejemplo, Erandio</p>
+                            <a href="https://www.erandio.eus" target="_blank">Visitar sitio</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- Alava -->
+          <div class="row col-12">
+             <!-- Tarjeta de Ejemplo 2 -->
+             <div class="card col-md-12 mb-4">
+                <div class="shadow-sm">
+              <img src="Images/ayutamient-vitoria.jpg" class="card-img-top" alt="Vitoria-Gasteiz">
+              <div class="card-body">
+                <h5 class="card-title">Vitoria-Gasteiz</h5>
+                <p class="card-text">Vitoria-Gasteiz es la capital de Álava y del País Vasco, conocida por su casco histórico medieval.</p>
+                <p><strong>Teléfono:</strong> +34 945 161 616</p>
+                <a href="https://www.vitoria-gasteiz.org" target="_blank" class="btn btn-primary">Visitar sitio</a>
+              </div>
+                </div>
+             </div>
+             
+               <!-- Tarjeta de municipios de Vizcaya relacionados con Bilbao -->
+            <div class="card col-md-6 mb-4">
+              <div class="shadow-sm">
+                <!-- <img src="Images/provincia-vizcaya.png" class="card-img-top" alt="vizcaya"> -->
+                <div class="card-body ">
+                  <h5 class="card-title ">Municipios en Vizcaya</h5>
+                  <div class="list-unstyled">
+                    <!-- line item -->
+                    <div class="line">
+                      <div  class="municipio-item">
+                        <strong>Barakaldo</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Barakaldo<br>
+                          <a href="https://www.barakaldo.eus" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                      <div  class="municipio-item">
+                        <strong>Santurtzi</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Santurtzi<br>
+                          <a href="https://www.santurtzi.eus" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Line item -->
+                    <div class="line">  
+                      <div  class="municipio-item">
+                        <strong>Basauri</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Basauri<br>
+                          <a href="https://www.basauri.net" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                      <div  class="municipio-item">
+                        <strong>Galdakao</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Galdakao<br>
+                          <a href="https://www.galdakao.eus" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                    </div>
+                      <!-- line item -->
+                      <div class="line">
+                        <div  class="municipio-item">
+                          <strong>Sestao</strong>
+                          <div class="municipio-details" >
+                            Dirección: Calle de Ejemplo, Sestao<br>
+                            <a href="https://www.sestao.eus" target="_blank">Visitar sitio</a>
+                          </div>
+                        </div>
+                        <div  class="municipio-item">
+                          <strong>Erandio</strong>
+                          <div class="municipio-details" >
+                            <p>Dirección: Calle de Ejemplo, Erandio</p>
+                            <a href="https://www.erandio.eus" target="_blank">Visitar sitio</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Gipuzkoa -->
+          <div class="row col-12">
+                <!-- Tarjeta de Ejemplo 3 -->
+                <div class="card col-md-12 mb-4">
+                  <div class=" shadow-sm">
+                     <img src="Images/ayutamient-sanesebastian.jpg" class="card-img-top" alt="San Sebastián">
+                     <div class="card-body ">
+                        <h5 class="card-title">San Sebastián</h5>
+                        <p class="card-text">San Sebastián es famosa por sus playas y su festival de cine internacional.</p>
+                        <p><strong>Teléfono:</strong> +34 943 481 000</p>
+                        <a href="https://www.donostia.eus" target="_blank" class="btn btn-primary">Visitar sitio</a>
+                     </div>
+                  </div>
+                </div>
+                <!-- Tarjeta de municipios de Vizcaya relacionados con Bilbao -->
+            <div class="card col-md-6 mb-4">
+              <div class="shadow-sm">
+                <!-- <img src="Images/provincia-vizcaya.png" class="card-img-top" alt="vizcaya"> -->
+                <div class="card-body ">
+                  <h5 class="card-title ">Municipios en Vizcaya</h5>
+                  <div class="list-unstyled">
+                    <!-- line item -->
+                    <div class="line">
+                      <div  class="municipio-item">
+                        <strong>Barakaldo</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Barakaldo<br>
+                          <a href="https://www.barakaldo.eus" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                      <div  class="municipio-item">
+                        <strong>Santurtzi</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Santurtzi<br>
+                          <a href="https://www.santurtzi.eus" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Line item -->
+                    <div class="line">  
+                      <div  class="municipio-item">
+                        <strong>Basauri</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Basauri<br>
+                          <a href="https://www.basauri.net" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                      <div  class="municipio-item">
+                        <strong>Galdakao</strong>
+                        <div class="municipio-details" >
+                          Dirección: Calle de Ejemplo, Galdakao<br>
+                          <a href="https://www.galdakao.eus" target="_blank">Visitar sitio</a>
+                        </div>
+                      </div>
+                    </div>
+                      <!-- line item -->
+                      <div class="line">
+                        <div  class="municipio-item">
+                          <strong>Sestao</strong>
+                          <div class="municipio-details" >
+                            Dirección: Calle de Ejemplo, Sestao<br>
+                            <a href="https://www.sestao.eus" target="_blank">Visitar sitio</a>
+                          </div>
+                        </div>
+                        <div  class="municipio-item">
+                          <strong>Erandio</strong>
+                          <div class="municipio-details" >
+                            <p>Dirección: Calle de Ejemplo, Erandio</p>
+                            <a href="https://www.erandio.eus" target="_blank">Visitar sitio</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+            </div>
+          </div>
+                <!-- Tarjeta para Guipúzcoa -->
+        </section>
+      </div>
+      
+    </div>
+    <!-- END Ayuntamiento Page -->
+
+    <!-- START SERVICIOS Page -->
+    <div class="page" id="page-servicios" style="display:none;">
+      <div class="titlePage">
+        <button onclick="toggleContent('page-landing')" class="btn btn-secondary d-flex align-items-center">
+          <i class="fas fa-arrow-left me-2"></i> 
+          Regresar
+        </button>
+        <h1>SERVICIOS</h1>
+      </div>
+      <div class="container">
+        <section> 
+          <div class="definicion">
+            <!-- <h1 class="text-center mb-4 ">Servicios</h1> -->
+            <p class=" text-center mb-5">
+              En esta sección encontrarás una variedad de servicios esenciales 
+              ofrecidos en el País Vasco para migrantes, incluyendo servicios administrativos,
+               de salud, educativos y sociales. Nuestro objetivo es ayudarte a integrar y adaptarte en 
+               la comunidad, ofreciéndote el apoyo necesario en cada etapa.
+            </p>
+          </div>
+          <!-- Sección de tarjetas de servicios -->
+          <div class="row">
+            <!-- Tarjeta de Servicios Administrativos -->
+            <div class="card col-md-6 mb-4">
+              <card class=" shadow-sm">
+                <img src="./Images/cronica_zuzenean.jpg" class="card-img-top" alt="Imagen de Servicios Administrativos">
+                <div class="card-body">
+                  <h5 class="card-title">Servicios Administrativos</h5>
+                  <p class="card-text">Las administraciones locales en el País Vasco ofrecen diversos servicios para residentes, incluyendo el registro de residencia, emisión de documentos oficiales, y asesoría sobre derechos y deberes.</p>
+                </div>
+              </card>
+            </div>
+      
+            <!-- Tarjeta de Servicios de Salud -->
+            <div class="card col-md-6 mb-4">
+              <div class="servicios shadow-sm">
+                <img src="./Images/salud.jpg" class="card-img-top" alt="Imagen de Servicios de Salud">
+                <div class="card-body">
+                  <h5 class="card-title">Servicios de Salud</h5>
+                  <p class="card-text">El sistema de salud vasco, Osakidetza, brinda atención médica a través de centros de salud y hospitales. Los residentes pueden obtener la tarjeta sanitaria (TIS) para acceder a estos servicios.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Tarjeta de Servicios Educativos -->
+            <div class="card col-md-6 mb-4">
+              <div class=" shadow-sm">
+                <img src="./Images/educativo.jpg" class="card-img-top" alt="Imagen de Servicios Educativos">
+                <div class="card-body">
+                  <h5 class="card-title">Servicios Educativos</h5>
+                  <p class="card-text">El sistema educativo del País Vasco abarca desde la educación primaria hasta la universidad. La educación es gratuita y obligatoria para niños de 6 a 16 años, y existen programas de formación para migrantes.</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Tarjeta de Servicios Sociales -->
+            <div class="card col-md-6 mb-4">
+              <div class=" shadow-sm">
+                <img src="./Images/sociales.jpg" class="card-img-top" alt="Imagen de Servicios Sociales">
+                <div class="card-body">
+                  <h5 class="card-title">Servicios Sociales</h5>
+                  <p class="card-text">El gobierno vasco ofrece una serie de ayudas sociales para mejorar la calidad de vida de los residentes, incluyendo apoyo a pacientes y sus familias, y programas de salud pública.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- END SERVICIOS Page -->
+
+<!-- START Asociaciones Page -->
+<div class="page" id="page-asociaciones" style="display:none;">
+  <div class="titlePage">
+    <button onclick="toggleContent('page-landing')" class="btn btn-secondary d-flex align-items-center">
+      <i class="fas fa-arrow-left me-2"></i> 
+      Regresar
+    </button>
+    <h1>ASOCIACIONES  EN EUSKADI</h1>
+  </div>
+  <div class="container">
+    <section>
+      <div class="definicion">
+        <p class=" text-center mb-5" >
+          Descubre asociaciones benéficas que ofrecen apoyo a migrantes 
+          y personas en situación de vulnerabilidad en el País Vasco.
+        </p>
+      </div>
+      
+      
+      <div class="row">
+        <!-- Asociación Cáritas Euskadi -->
+        <div class="card col-md-6 mb-4">
+          <div class="shadow-sm">
+            <img src="Images/caritas.jpg" class="card-img-top" alt="Asociación 1">
+            <div class="card-body">
+              <h5 class="card-title">Cáritas Euskadi</h5>
+              <p class="card-text">Cáritas ofrece apoyo a personas en situación de exclusión, ayudando a cubrir necesidades básicas y promover la inclusión social.</p>
+              <a href="https://www.caritas.es/euskadi" target="_blank" class="btn btn-primary">Visitar sitio</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Asociación CEAR Euskadi -->
+        <div class="card col-md-6 mb-4">
+          <div class="shadow-sm">
+            <img src="Images/cear.jpg" class="card-img-top" alt="Asociación 2">
+            <div class="card-body">
+              <h5 class="card-title">CEAR Euskadi</h5>
+              <p class="card-text">La Comisión Española de Ayuda al Refugiado ofrece asesoría jurídica y programas de integración para refugiados y solicitantes de asilo.</p>
+              <a href="https://www.cear-euskadi.org" target="_blank" class="btn btn-primary">Visitar sitio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Asociación Cruz Roja -->
+      <div class="row">
+        <div class="card col-md-6 mb-4">
+          <div class="shadow-sm">
+            <img src="Images/cruz-roja.jpg" class="card-img-top" alt="Cruz Roja">
+            <div class="card-body">
+              <h5 class="card-title">Cruz Roja</h5>
+              <p class="card-text">Cruz Roja ofrece servicios de emergencia, apoyo social y programas de integración para migrantes y personas en situación de vulnerabilidad.</p>
+              <a href="https://www.cruzroja.es/principal/web/provincial-vizcaya" target="_blank" class="btn btn-primary">Visitar sitio</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Asociación ACCEM -->
+        <div class="card col-md-6 mb-4">
+          <div class="shadow-sm">
+            <img src="Images/accem.png" class="card-img-top" alt="ACCEM">
+            <div class="card-body">
+              <h5 class="card-title">ACCEM</h5>
+              <p class="card-text">ACCEM trabaja para mejorar las condiciones de vida de migrantes y refugiados, promoviendo su inclusión y derechos en la sociedad.</p>
+              <a href="https://www.accem.es" target="_blank" class="btn btn-primary">Visitar sitio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- END Asociaciones Page -->
+
+
+
+    <!-- START Contacto Page -->
+    <div class="page" id="page-contacto" style="display:none;">
+      <div class="titlePage">
+        <button onclick="toggleContent('page-landing')" class="btn btn-secondary d-flex align-items-center">
+          <i class="fas fa-arrow-left me-2"></i> 
+          Regresar
+        </button>
+        <h1>CONTACTO</h1>
+      </div>
+      <div class="container">
+        <div class="tex-contacto">
+          <a href="#">info.servicio@eskadimigrantes.es</a>
+          <p>TEL: 662 661 600, 945 052 050</p>
+       
+        </div>
+        <form>
+          <h3>Enviar mensaje</h3>
+          <div class="input-form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Nombre completo">
+          </div>
+          <div class="input-form">
+            <label for="motivo">Motivo</label>
+            <input type="text" id="motivo" name="motivo" placeholder="Escriba el motivo">
+          </div>
+          <div class="input-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@ejemplo.com">
+          </div>
+          <div class="input-form">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="10" cols="50"></textarea>
+          </div>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
+    <!-- END Contacto Page -->
+  </main>
+  <!-- END Main Content -->
+
+  <!-- START Footer -->
+  <footer>
+    <div class="logo"><a href="#"><img src="Images/logo.png" alt="Footer Logo"></a></div>
+    <div class="menu-footer">
+      <ul>
+        <li><a href="#" onclick="toggleContent('page-contacto')">CONTACTO</a>
+          <p>+34 123 897 211</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#" onclick="toggleContent('page-servicios')">SERVICIOS</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" onclick="toggleContent('page-ayuntamiento')">AYUNTAMIENTOS</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- END Footer -->
+ 
+  <!-- Link to the external JavaScript file -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
