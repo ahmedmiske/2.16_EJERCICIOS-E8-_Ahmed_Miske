@@ -1,1 +1,3 @@
 Contenido del archivo rama1
+Nueva línea 1
+Nueva línea 2
