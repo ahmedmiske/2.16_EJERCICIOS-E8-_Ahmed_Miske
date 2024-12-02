@@ -1,1 +1,2 @@
 Contenido del archivo rama1
+Línea añadida en master
