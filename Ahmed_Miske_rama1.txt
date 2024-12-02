@@ -1,0 +1,7 @@
+Contenido del archivo rama1
+<<<<<<< HEAD
+Línea añadida en master
+=======
+Nueva línea 1
+Nueva línea 2
+>>>>>>> Ahmed_Miske_rama
